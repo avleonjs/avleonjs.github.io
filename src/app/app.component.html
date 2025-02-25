@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AvleonJS Documentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function switchVersion(version) {
+      window.location.href = version;
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md p-4">
+      <h2 class="text-xl font-bold mb-4">AvleonJS</h2>
+      <label for="version" class="text-gray-500 text-sm">Select Version:</label>
+      <select id="version" class="w-full mt-2 p-2 border rounded" onchange="switchVersion(this.value)">
+        <option value="v1.0.0.html">Version 1.0.0</option>
+        <option value="v0.9.0.html">Version 0.9.0</option>
+      </select>
+      <a href="https://github.com/avleonjs" target="_blank"
+        class="block mt-4 bg-red-600 text-white text-center py-2 rounded shadow-lg hover:bg-red-700 transition">GitHub</a>
+      <nav class="mt-6">
+        <ul>
+          <li class="mb-2"><a href="#introduction" class="text-red-600 hover:underline">Introduction</a></li>
+          <li class="mb-2"><a href="#installation" class="text-red-600 hover:underline">Installation</a></li>
+          <li class="mb-2"><a href="#getting-started" class="text-red-600 hover:underline">Getting Started</a></li>
+          <li class="mb-2"><a href="#basic-concept" class="text-red-600 hover:underline">Basic Concept</a></li>
+          <li class="mb-2"><a href="#digging-deeper" class="text-red-600 hover:underline">Digging Deeper</a></li>
+          <li class="mb-2"><a href="#faqs" class="text-red-600 hover:underline">FAQs</a></li>
+          <li class="mb-2"><a href="#changelog" class="text-red-600 hover:underline">Changelog</a></li>
+          <li class="mb-2"><a href="#migration" class="text-red-600 hover:underline">Migration</a></li>
+          <li class="mb-2"><a href="#contact" class="text-red-600 hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+      <section id="introduction">
+        <h1 class="text-2xl font-bold mb-4">Introduction</h1>
+        <p class="text-gray-700">AvleonJS is a modern, lightweight framework for building scalable applications.</p>
+      </section>
+
+      <section id="installation" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Installation</h2>
+        <pre class="bg-gray-200 p-4 rounded">pnpm add avleon</pre>
+      </section>
+
+      <section id="getting-started" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Getting Started</h2>
+        <p class="text-gray-700">Learn how to set up and configure your AvleonJS project.</p>
+      </section>
+
+      <section id="basic-concept" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Basic Concept</h2>
+        <p class="text-gray-700">Understand the core principles of AvleonJS and how to use them effectively.</p>
+      </section>
+
+      <section id="digging-deeper" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Digging Deeper</h2>
+        <p class="text-gray-700">Explore advanced features and optimizations.</p>
+      </section>
+
+      <section id="faqs" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">FAQs</h2>
+        <p class="text-gray-700">Find answers to commonly asked questions.</p>
+      </section>
+
+      <section id="changelog" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Changelog</h2>
+        <p class="text-gray-700">Track changes and updates in each version.</p>
+      </section>
+
+      <section id="migration" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Migration</h2>
+        <p class="text-gray-700">Guidelines for upgrading to newer versions.</p>
+      </section>
+
+      <section id="contact" class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Contact</h2>
+        <p class="text-gray-700">Reach out for support or inquiries.</p>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
