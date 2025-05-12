@@ -27,5 +27,21 @@ Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizab
 ::
 
 ::div{class="border rounded-lg shadow-md"}
-  some code will be here
+```ts [app.ts]
+import { Avleon, ApiController, Get, Results } from "@avleon/core";
+
+// Define a controller
+@ApiController
+class HelloController {
+  @Get()
+  sayHello() {
+    return "Hello, Avleon!";
+  }
+}
+
+// Create and start the application
+const app = Avleon.createApplication();
+app.useControllers([HelloController]);
+app.run(); // or app.run(3000)
+```
 ::
