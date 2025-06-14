@@ -1,5 +1,5 @@
 {
-  "name": "shadcn-docs-nuxt-starter",
+  "name": "avleon-docs",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "9.5.4",
     "nuxt": "^3.17.0",
     "shadcn-docs-nuxt": "^0.8.21",
     "vue": "^3.5.13",

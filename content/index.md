@@ -6,7 +6,7 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: 'Release v0.0.28'
+  title: 'Release v0.0.36'
   icon: '🎉'
   to: https://github.com/avleonjs/avleon-core/releases/latest
   target: _blank
@@ -20,28 +20,38 @@ actions:
 ---
 
 #title
-Welcome to AvleonJs
+AVLEON
 
 #description
-Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizable. Compatible. Open Source.
+A powerful TypeScript-based web framework built on Fastify.
+
 ::
 
-::div{class="border rounded-lg shadow-md"}
-```ts [app.ts]
-import { Avleon, ApiController, Get, Results } from "@avleon/core";
+::div{class="border border-red-50 rounded-xl shadow-xl bg-black bg-opacity-40 backdrop-filter backdrop-blur-md overflow-hidden"}
 
-// Define a controller
+::code-group
+```ts [welcome.controller.ts]
+import { ApiController, Get } from "@avleon/core";
+
 @ApiController
-class HelloController {
+export class WelcomeController {
   @Get()
   sayHello() {
     return "Hello, Avleon!";
   }
 }
+```
 
-// Create and start the application
+```ts [app.ts]
+import { Avleon } from "@avleon/core";
+import { WelcomeController } from "welcome.controller";
+
+
 const app = Avleon.createApplication();
-app.useControllers([HelloController]);
-app.run(); // or app.run(3000)
+app.useControllers([ WelcomeController ]);
+app.run(); // or app.run(4000)
 ```
 ::
+::
+
+        
