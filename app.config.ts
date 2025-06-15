@@ -10,11 +10,11 @@ export default defineAppConfig({
       color: 'rose',
       radius: 0.5,
     },
-          languageSwitcher: {
-        enable: true,
-        triggerType: 'icon',
-        dropdownType: 'select',
-      },
+    languageSwitcher: {
+      enable: true,
+      triggerType: 'icon',
+      dropdownType: 'select',
+    },
     header: {
       title: 'AVLEON',
       showTitle: true,
