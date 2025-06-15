@@ -6,7 +6,7 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: 'Release v0.0.36'
+  title: 'Release v0.0.32'
   icon: '🎉'
   to: https://github.com/avleonjs/avleon-core/releases/latest
   target: _blank

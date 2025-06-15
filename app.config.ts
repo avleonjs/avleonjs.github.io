@@ -75,17 +75,12 @@ export default defineAppConfig({
       },
 
       {
-        title: 'v0.0.36 (Latest)',
+        title: 'v0.0.32 (Latest)',
         links: [{
-          title: 'v0.0.36',
+          title: 'v0.0.32',
           to: '/',
           description: 'Fast and low overhead web framework, for Node.js',
            icon: 'lucide:box',
-        }, {
-          title: 'v0.0.29',
-          to: '/v29',
-          description: 'Explore available UI components and usage examples.',
-          icon: 'lucide:box',
         }],
       },
     
