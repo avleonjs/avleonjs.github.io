@@ -1,30 +1,53 @@
-# AvleonJs Documentation
+# Avleon Documentation
 
-## ⚠️ WARNING: NOT FOR PRODUCTION USE
+Source for [avleonjs.github.io](https://avleonjs.github.io/), the documentation
+site for [Avleon](https://github.com/avleonjs/avleon-core), a TypeScript-first
+web framework built on Fastify. The site is built with
+[VitePress](https://vitepress.dev).
 
-> **🚧 This project is in active development.**
->
-> It is **not stable** and **not ready** for live environments.  
-> Use **only for testing, experimentation, or internal evaluation**.
->
-> ####❗ Risks of using this in production:
->
-> - 🔄 Breaking changes may be introduced at any time
-> - 🧪 Features are experimental and may be unstable
-> - 🔐 Security has not been audited
-> - 💥 Potential for data loss or critical errors
->
-> **Please do not deploy this in production environments.**
+## Development
 
-## Overview
+Requires Node.js 20 or newer.
 
-Avleon is a powerful, TypeScript-based web framework built on top of Fastify, designed to simplify API development with a focus on decorators, dependency injection, and OpenAPI documentation. It provides a robust set of tools for building scalable, maintainable web applications with minimal boilerplate code.
+```sh
+npm install
+npm run dev       # dev server at http://localhost:5173
+npm run build     # static build in .vitepress/dist
+npm run preview   # serve the build locally
+```
 
-[Documentation](https://avleonjs.github.io/)
+`npm run build` fails on dead internal links, so run it before opening a pull
+request.
+
+## Layout
+
+```
+content/                 Markdown pages; the folder path is the URL
+├── index.md             Home page
+├── getting-started/
+├── core-concept/
+├── advanced/
+├── microservices/       OpenAPI and WebSocket
+├── ai/
+├── cli/
+└── public/              Static files served from /
+.vitepress/
+├── config.mts           Nav, sidebar, search and footer
+└── theme/               Theme colours
+```
+
+To add a page, create a Markdown file under `content/` with a `title` and
+`description` in its frontmatter, then add it to `sidebar` in
+`.vitepress/config.mts`.
+
+## Deployment
+
+Pushing to `main` builds the site and deploys it to GitHub Pages
+(`.github/workflows/deploy.yml`).
 
 ## License
 
-ISC
+MIT
 
 ## Author
 
